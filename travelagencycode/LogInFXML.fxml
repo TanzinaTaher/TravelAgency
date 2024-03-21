@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="317.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="travelagencycode.LogInFXMLController">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogIN.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="87.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="112.0" text="User Name :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="154.0" text="Password :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" layoutX="209.0" layoutY="211.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #e67e22;" text="LogIN">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="230.0" layoutY="112.0" opacity="0.5" prefHeight="31.0" prefWidth="276.0" />
+      <Label fx:id="forgotpassword" layoutX="442.0" layoutY="274.0" text="ForgotPassword" textFill="#eebebe">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="230.0" layoutY="153.0" opacity="0.5" prefHeight="31.0" prefWidth="276.0" />
+      <Button fx:id="backbtn" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-background-color: #009432;" text="Back" textFill="#282828" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" opacity="0.8" prefHeight="681.0" prefWidth="600.0" style="-fx-background-color: #1e3799;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="travelagencycode.AddNewPlaceFXMLController">
+   <children>
+      <Label layoutX="107.0" layoutY="62.0" text="Add Places Around The Globe" textFill="#00ff73">
+         <font>
+            <Font name="Buxton Sketch" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="193.0" text="Places :" textFill="#39f500">
+         <font>
+            <Font name="Poor Richard" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="269.0" text="Prices :" textFill="#39f500">
+         <font>
+            <Font name="Poor Richard" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="355.0" text="Adress :" textFill="#39f500">
+         <font>
+            <Font name="Poor Richard" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="place" layoutX="241.0" layoutY="194.0" opacity="0.5" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="price" layoutX="241.0" layoutY="272.0" opacity="0.5" prefHeight="31.0" prefWidth="260.0" />
+      <TextField fx:id="adress" layoutX="241.0" layoutY="362.0" opacity="0.5" prefHeight="31.0" prefWidth="260.0" />
+      <Button layoutX="224.0" layoutY="464.0" mnemonicParsing="false" onAction="#AddPlacesButtonAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #f8c291;" text="Add Place" textFill="#900b0b" />
+      <Button fx:id="backbtn" layoutX="50.0" layoutY="561.0" mnemonicParsing="false" onAction="#BackButtonAction" style="-fx-background-color: #079992;" text="back" textFill="#570000" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="travelagencycode.SearchUserFXMLController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Seacrh%20User.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="156.0" prefHeight="32.0" prefWidth="209.0" text="UserName :" textFill="#eb0b0b">
+         <font>
+            <Font name="Wide Latin" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="256.0" layoutY="157.0" opacity="0.5" prefHeight="31.0" prefWidth="312.0" />
+      <Button fx:id="search" layoutX="244.0" layoutY="219.0" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #ff7979;" text="Search " />
+      <Button fx:id="backbtn" layoutX="26.0" layoutY="299.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #ff7979;" text="back" />
+      <Label layoutX="188.0" layoutY="56.0" style="-fx-background-color: #ffbe76;" text="Seach User " textFill="#d31a1a">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
